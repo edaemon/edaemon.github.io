@@ -10,7 +10,7 @@
 # 'public' directory, then pushes that directory to the master branch.
 # GitHub Pages automatically publishes the contents.
 
-set -uex
+set -ue
 
 BRANCH_CURRENT=$(git rev-parse --abbrev-ref HEAD)
 GIT_REMOTE="origin"
@@ -29,7 +29,7 @@ error() {
 }
 
 if [ "${BRANCH_CURRENT}" != "source" ]; then
-    echo("Not on source branch!")
+    error "Not on source branch!"
 fi
 
 echo "Updating Git submodules..."
