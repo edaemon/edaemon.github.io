@@ -40,8 +40,11 @@ echo "Building the Hugo site..."
 cleanup
 hugo --destination "${PUBLISH_DIR}"
 
-echo "Committing to master branch..."
+echo "Adding the custom domain..."
 cd "${PUBLISH_DIR}"
+echo "edaemon.net" > CNAME
+
+echo "Committing to master branch..."
 git init
 git remote add "${GIT_REMOTE}" "${GIT_REMOTE_URL}"
 git checkout --orphan master
