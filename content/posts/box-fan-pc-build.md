@@ -63,4 +63,45 @@ That said, leave the plastic wrap on it until you're done working on it.
 I went with a Mini-ITX motherboard for the small form factor. I didn't need any of the features unique to ATX or micro-ATX boards, so the size was all that really mattered.
 I ended up with the (BOARD NAME/LINK) which has served me just fine.
 
-Mounting the motherboard (and CPU) was simple enough. I 
+Mounting the motherboard (and CPU) was simple enough. I drilled holes in the side wall and used brass standoffs to keep some distance between
+side wall and underside of the board.
+
+![Example image](/static/box-fan-pc-case/mobo-mount.jpg)
+
+I also cut a hole in the rear for the I/O plate. I used a rotary tool with a diamond wheel.
+
+
+## Video card mounting
+
+Mounting the video card was more complex. I cut a hole in the rear for the card's I/O area. Since the bolt holding the card agains the rear of the case is not strong enough
+on its own, I then mounted a shoulder bolt in one of the vertical supports which originally held the fan motor. The video card rests on this bolt. I wouldn't call it sturdy,
+but it does keep everything in place.
+
+![Example image](/static/box-fan-pc-case/video-card.jpg)
+
+Since the video card is not in a normal position I had to use a PCI Express riser cable. I was skeptical this would work well, so I bought a "premium" one originally
+meant for cryptocurrency mining rigs. Since then more cases have started using riser cables, so there may be decent ones more readily available.
+
+## Everything else
+
+The CPU cooler is a 240mm closed-loop radiator. It's mounted to the sidewall using the stock bolts. A piece of gutter protector, spray-painted black, sits in front of it to
+protect the radiator fins from being poked or bent.
+
+![Example image](/static/box-fan-pc-case/radiator.jpg)
+
+The power supply is an SFX-L form factor power supply. The tiny size works great for this kind of case. It's mounted in the bottom steel with brass standoffs.
+
+![Example image](/static/box-fan-pc-case/psu.jpg)
+
+The power button is a regular momentary switch wired up to the motherboard leads. There's no reset switch.
+
+## Future changes
+
+Overall the case has worked well. The components have stayed cool and I haven't had any structural issues with it.
+
+The only real issues are dust, noise, and portability. The dust-proofing isn't great, with some screens over the intake fans and gaps between the frame and sidewalls. I have to
+clean it every few months. It also isn't soundproofed so when the GPU/CPU really start to work hard I can hear the fans kick on. I usually wear headphones so that isn't really
+an issue. Finally, since the video card mount isn't all that robust and the handle was only meant for a light fan I'm not all that comfortable moving it without laying it on its side.
+That's not much different than a normal PC case but it would be nice to have something easy to move around.
+
+Generally I've been happy with it and I think it won't be too difficult to improve on it with my next one.
