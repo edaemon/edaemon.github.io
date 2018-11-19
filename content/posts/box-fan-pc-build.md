@@ -22,7 +22,7 @@ Last summer I was building a new PC and I had some specific requirements for the
 about 4 inches wide, and the price had to be reasonable. I didn't have any specific length or depth in mind -- I just wanted it to fit under my desk without taking up a bunch 
 of horizontal space. I couldn't find anything that fit the bill, so I ended up building my own:
 
-![Example image](/static/box-fan-pc-case/main.jpg)
+[![Full case](/box-fan-pc-case/opt/main.jpg)](/box-fan-pc-case/full/main.jpg)
 
 It's built in a box fan. I had a broken fan laying around and it was essentially what I needed: it's steel, it's big enough but not too big, and it's free.
 All that was missing were the sides, holes, and mounts where PC components would be hooked up. Those are easy enough to put together.
@@ -31,17 +31,16 @@ All that was missing were the sides, holes, and mounts where PC components would
 
 The meat of the case is the box fan itself. Obviously the blade, motor, and wiring have been removed. The feet were replaced with a more robust foot:
 
-![Example image](/static/box-fan-pc-case/foot.jpg)
+[![Case foot](/box-fan-pc-case/opt/foot.jpg)](/box-fan-pc-case/full/foot.jpg)
 
 The foot is made out of a piece of plywood and some rain gutter brackets. The plywood wasn't a great choice as it interacted differently with the paint than the metal/plastic, 
 but structurally this worked out. The foot shape and attachment also had to account for the airflow and power cord. The power cord plugs in at a right angle and runs back
-through the foot:
-
-![Example image](/static/box-fan-pc-case/power-cord.jpg)
+through the foot.
 
 Finally, some airflow moves through three cutouts in the case itself: the top-rear corner, the bottom-rear corner, and the power supply in the bottom-front.
 
-![Example image](/static/box-fan-pc-case/case-airflow.jpg)
+[![Bottom rear airflow](/box-fan-pc-case/opt/case-airflow-1.jpg)](/box-fan-pc-case/full/case-airflow-1.jpg)
+[![Top rear airflow](/box-fan-pc-case/opt/case-airflow-2.jpg)](/box-fan-pc-case/full/case-airflow-2.jpg)
 
 Along with the airflow in the sidewalls (more on that later) that's been sufficient.
 
@@ -56,7 +55,7 @@ Clear sides just make it easy to see all the dust that's collected inside, while
 Acrylic worked well -- you have to be careful drilling through it, but cutting it is easy and it's durable enough to resist bumps and scratches.
 That said, leave the plastic wrap on it until you're done working on it.
 
-![Example image](/static/box-fan-pc-case/sidewalls.jpg)
+[![Side walls](/box-fan-pc-case/opt/sidewalls.jpg)](/box-fan-pc-case/full/sidewalls.jpg)
 
 ## Motherboard mounting
 
@@ -66,7 +65,7 @@ I ended up with the (BOARD NAME/LINK) which has served me just fine.
 Mounting the motherboard (and CPU) was simple enough. I drilled holes in the side wall and used brass standoffs to keep some distance between
 side wall and underside of the board.
 
-![Example image](/static/box-fan-pc-case/mobo-mount.jpg)
+[![Motherboard mount](/box-fan-pc-case/opt/mobo-mount.jpg)](/box-fan-pc-case/full/mobo-mount.jpg)
 
 I also cut a hole in the rear for the I/O plate. I used a rotary tool with a diamond wheel.
 
@@ -77,7 +76,7 @@ Mounting the video card was more complex. I cut a hole in the rear for the card'
 on its own, I then mounted a shoulder bolt in one of the vertical supports which originally held the fan motor. The video card rests on this bolt. I wouldn't call it sturdy,
 but it does keep everything in place.
 
-![Example image](/static/box-fan-pc-case/video-card.jpg)
+[![Video card mount](/box-fan-pc-case/opt/video-card.jpg)](/box-fan-pc-case/full/video-card.jpg)
 
 Since the video card is not in a normal position I had to use a PCI Express riser cable. I was skeptical this would work well, so I bought a "premium" one originally
 meant for cryptocurrency mining rigs. Since then more cases have started using riser cables, so there may be decent ones more readily available.
@@ -87,11 +86,11 @@ meant for cryptocurrency mining rigs. Since then more cases have started using r
 The CPU cooler is a 240mm closed-loop radiator. It's mounted to the sidewall using the stock bolts. A piece of gutter protector, spray-painted black, sits in front of it to
 protect the radiator fins from being poked or bent.
 
-![Example image](/static/box-fan-pc-case/radiator.jpg)
+[![Radiator](/box-fan-pc-case/opt/radiator.jpg)](/box-fan-pc-case/full/radiator.jpg)
 
 The power supply is an SFX-L form factor power supply. The tiny size works great for this kind of case. It's mounted in the bottom steel with brass standoffs.
 
-![Example image](/static/box-fan-pc-case/psu.jpg)
+[![Power supply](/box-fan-pc-case/opt/psu.jpg)](/box-fan-pc-case/full/psu.jpg)
 
 The power button is a regular momentary switch wired up to the motherboard leads. There's no reset switch.
 
