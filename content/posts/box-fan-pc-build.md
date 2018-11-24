@@ -60,7 +60,7 @@ That said, leave the plastic wrap on it until you're done working on it.
 ## Motherboard mounting
 
 I went with a Mini-ITX motherboard for the small form factor. I didn't need any of the features unique to ATX or micro-ATX boards, so the size was all that really mattered.
-I ended up with the (BOARD NAME/LINK) which has served me just fine.
+I ended up with the [ASUS Z170I PRO](https://www.asus.com/us/Motherboards/Z170I-PRO-GAMING/) which has served me just fine.
 
 Mounting the motherboard (and CPU) was simple enough. I drilled holes in the side wall and used brass standoffs to keep some distance between
 side wall and underside of the board.
@@ -88,11 +88,19 @@ protect the radiator fins from being poked or bent.
 
 [![Radiator](/box-fan-pc-case/opt/radiator.jpg)](/box-fan-pc-case/full/radiator.jpg)
 
-The power supply is an SFX-L form factor power supply. The tiny size works great for this kind of case. It's mounted in the bottom steel with brass standoffs.
+The power supply is an SFX form factor power supply. The tiny size works great for this kind of case. It's mounted in the bottom steel with brass standoffs.
 
 [![Power supply](/box-fan-pc-case/opt/psu.jpg)](/box-fan-pc-case/full/psu.jpg)
 
 The power button is a regular momentary switch wired up to the motherboard leads. There's no reset switch.
+
+The components:
+
+* Motherboard: [ASUS Z170I PRO](https://www.asus.com/us/Motherboards/Z170I-PRO-GAMING/)
+* Video card: [Sapphire Radeon Nitro R9 Fury](http://www.sapphiretech.com/productdetial.asp?pid=B962294E-9DBC-470E-A817-46EC0AA5B14A&lang=eng)
+* Power supply: [Corsair SF600](https://www.corsair.com/us/en/Power/Plug-Type/SF-Series%E2%84%A2-80-PLUS-Titanium-Power-Supplies/p/CP-9020105-NA)
+* CPU cooler: [Corsair H100i](https://www.corsair.com/us/en/Categories/Products/Liquid-Cooling/Dual-Radiator-Liquid-Coolers/Hydro-Series%E2%84%A2-H100i-Extreme-Performance-CPU-Cooler/p/CW-9060009-WW)
+* RAM: [Kingston HyperX Fury (16GB)](https://www.hyperxgaming.com/us/memory/fury-DDR4)
 
 ## Future changes
 
