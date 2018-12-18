@@ -17,7 +17,7 @@ pygmentscodefencesguesssyntax = true
     info = "DevOps and Cloud Infrastructure"
     description = "Evan Damon's personal website and blog"
     keywords = "blog,devops,personal,cloud"
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "images/avatar.png"
 
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"
