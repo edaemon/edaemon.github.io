@@ -14,7 +14,7 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Evan Damon"
-    info = "DevOps and Cloud Infrastructure"
+    info = "DevOps and Infrastructure"
     description = "Evan Damon's personal website and blog"
     keywords = "blog,devops,personal,cloud"
     avatarurl = "images/avatar.png"
@@ -40,11 +40,6 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-gitlab fa-2x"
     weight = 2
     url = "https://gitlab.com/edaemon/"
-[[params.social]]
-    name = "StackExchange"
-    icon = "fab fa-stack-overflow fa-2x"
-    weight = 3
-    url = "https://stackoverflow.com/users/7054405/edaemon"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
