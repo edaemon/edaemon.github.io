@@ -30,7 +30,7 @@ it's a JavaScript library for creating user interfaces, and it's everywhere. I h
 wanted to learn more about it, so I decided to build something simple with it. I also threw in a few other tools
 I'd been planning to tinker with.
 
-Why I chose the "inb4" thing? No real reason other than fitting the parameters: I could build it as a simple app that
+Why did I choose the "inb4" thing? No real reason other than fitting the parameters: I could build it as a simple app that
 referenced a REST endpoint in front of a database.
 
 # Tools and technology
