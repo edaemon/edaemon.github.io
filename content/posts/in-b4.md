@@ -17,7 +17,7 @@ categories = [
 ]
 +++
 
-I created [in-b4.com](https://in-b4.com), a silly little app for the
+I created [in-b4.com](https://in-b4.com), a simple little web app for the
 "[in-b4](https://www.urbandictionary.com/define.php?term=inb4)" internetism. This post has my thoughts on the
 process and tools involved.
 
@@ -90,7 +90,7 @@ that render things directly, like this snippet from [`material-ui-pickers`](http
     While the rest of the code in the snippet may be what you're looking for, this line is included for
     demonstration. It would be easy to copy-paste the code provided and have it sort of work, only to end
     up spending a long while debugging it. That's a simple example but you get the idea.
-* Most documentation assumes you're quite familiar with HTML, CSS, and JS. (I say this as someone who is familiar,
+* Most documentation assumes you're familiar with HTML, CSS, and JS. (I say this as someone who is familiar,
 so maybe my perception is skewed.) This is a perfectly fair assumption considering the purpose of React, but
 anyone thinking they can jump in to web development by going straight to React might struggle to get
 their bearings.
@@ -167,7 +167,8 @@ Many applications/services need fast reads and fast-enough writes globally for c
 they can achieve reads in 1-10ms, and writes in 100-150ms, *with global consistency*. It's not light-speed like some
 in-memory stores but that's great (or seems that way to me) for things where you have lots of people submitting data that's
 quickly read by people elsewhere in the world. As an imperfect example, posting a Tweet about a developing news story
-should happen quickly and needs to be visible to everyone else very quickly -- Fauna seems like it would be good for that.
+should happen quickly and needs to be visible to everyone else very quickly -- Fauna seems like it could be good for situations
+like that.
 
 To provide some data of my own, the submission function that writes to the database takes about 1.3 seconds for the first write
 in a while (I would assume this is an AWS Lambda cold start) but is more like 300ms on average. That's being run from Oregon
@@ -186,22 +187,28 @@ initial database for new projects, and analyze the database choice when it becom
 
 # Global distribution
 
-Now, to finally get around to the topic I keep mentioning: global distribution.
+Now to finally get around to the topic I keep mentioning: global distribution.
 
 Two of the services used here, Netlify and FaunaDB, distribute your files/code/data worldwide. With those two, the application
 and its data are available in many geographical areas, if not globally. However, the REST layer, provided by Netlify Functions,
-is only available in the Eastern US. Obviously that leads to a performance oddity: loading the application is quite quick, but
-running database operations
-Partway through this project I started to think about this more: while this project was just
-for exploring some new tools, other things could really benefit from having all layers distributed globally.
+is only available in the Eastern US by default. Obviously that leads to a performance oddity: loading the application is quite quick,
+but running database operations incurs some latency.
 
-For future investigation, I plan to look at [Lambda@Edge](https://aws.amazon.com/lambda/edge/) and/or [Cloudflare Workers](https://www.cloudflare.com/products/cloudflare-workers/). Both of these services allow you to run code on CDN edge servers, which could move the REST API from
-a single location to many. Cloudflare Workers is especially interesting because it's very familiar (I use it at work and personally)
-and because of the cache API they provide, which should decrease the number of database requests required. From what I've learned
-here this stack has interesting performance potential:
+For future investigation, I plan to look at [Lambda@Edge](https://aws.amazon.com/lambda/edge/), [Zeit Now](https://zeit.co/now), and/or [Cloudflare Workers](https://www.cloudflare.com/products/cloudflare-workers/). All of these services allow you to run code on CDN edge servers, which could move the REST API from
+a single location to many. Cloudflare Workers is interesting because it's familiar to me (I use it at work and personally)
+and because of the cache API they provide, which should decrease the number of database requests required. Zeit is also intriguing
+because they provide both static site hosting and function deployment -- and they have a free tier.
+
+From what I've learned here this stack has interesting performance potential:
 
 1. Static assets/application on Netlify (Akamai)
 2. REST layer on CF Workers, with caching
+3. Data on FaunaDB
+
+Alternatively, Zeit may make this even simpler:
+
+1. Static assets/application on Zeit (AWS?)
+2. REST layer on Zeit, with caching
 3. Data on FaunaDB
 
 I'd like to explore that sometime in the coming months.
@@ -217,6 +224,6 @@ Some closing notes:
 
 You can check out the application I built here: https://in-b4.com/
 
-The code is visible here: https://github.com/edaemon/in-b4/
+The code is available here: https://github.com/edaemon/in-b4/
 
 Thanks for reading.
