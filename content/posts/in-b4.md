@@ -28,10 +28,21 @@ If you want to check out the code: https://github.com/edaemon/in-b4/
 Most people working with web technology have probably heard about [React](https://reactjs.org/). If you haven't,
 it's a JavaScript library for creating user interfaces, and it's everywhere. I had heard about React so much I
 wanted to learn more about it, so I decided to build something simple with it. I also threw in a few other tools
-I'd been planning to tinker with.
+I'd been planning to tinker with related to the [JAMstack](https://jamstack.org/) architecture.
 
 Why did I choose the "inb4" thing? No real reason other than fitting the parameters: I could build it as a simple app that
 referenced a REST endpoint in front of a database.
+
+For some context I'll give an example of how in-b4 is used: if you were to post on Twitter/Reddit/etc.
+something like "Star Trek is the best sci-fi series ever made!" you should expect some pushback. Some of that
+pushback might be thoughtful, but some of it could be tired and predictable. For instance, someone may make fun
+of the [Riker Maneuver](https://memory-alpha.fandom.com/wiki/Riker_Maneuver); to head them off you could
+enter a message on in-b4 and append it to your post. For the first hour (or however long you set) nobody will
+be able to see what you've entered, but after that hour they'll be able to click on the link like the one below:
+
+https://in-b4.com/233655257752666628
+
+(Just to be clear, I like both Star Trek and Star Wars, and lots of other sci-fi series. Don't hurt me.)
 
 # Tools and technology
 
